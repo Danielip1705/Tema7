@@ -17,7 +17,7 @@ public class Ej3 {
 		for (char a : array) {
 			if (Character.isLetter(a)) {
 				a = Character.toLowerCase(a);
-				contadorCaracteres.put(a, contadorCaracteres.getOrDefault(a, 0));
+				contadorCaracteres.put(a, contadorCaracteres.getOrDefault(a, 0)+1);
 			}
 		}
 	}
