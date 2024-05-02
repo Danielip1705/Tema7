@@ -1,7 +1,5 @@
 package boletin1;
 
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -10,10 +8,14 @@ public class Ej3 {
 	public static void main(String[] args) {
 
 		// Creamos un objeto de la clase hashMap
-		Map<Character, Integer> contadorCaracteres = new HashMap<Character, Integer>();
+		Map<Character, Integer> contadorCaracteres = new TreeMap<Character, Integer>();
 
 		// Creamos con la clase String texto con un texto inicializado
-		String texto = "En un agujero en el suelo, vivía un hobbit. No un agujero húmedo, sucio, repugnante, con restos de gusanos y olor a fango, ni tampoco un agujero, seco, desnudo y arenoso, sin nada en que sentarse o que comer: era un agujero-hobbit, y eso significa comodidad";
+		String texto = "En un agujero en el suelo, vivia un hobbit. "
+				+ "No un agujero humedo, sucio, repugnante, "
+				+ "con restos de gusanos y olor a fango, ni tampoco un agujero, seco,"
+				+ " desnudo y arenoso, sin nada en que sentarse o que comer: "
+				+ "era un agujero-hobbit, y eso significa comodidad";
 
 		// Creamos con un array de caracteres que sera el texto.TocharArray
 		char[] array = texto.toCharArray();
