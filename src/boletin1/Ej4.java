@@ -11,20 +11,26 @@ public class Ej4 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
-		Set<String> nombres = new LinkedHashSet<String>();
-		String nombre;
-		
+
+		ArrayList<String> nombres = new ArrayList<String>();
+
+		System.out.println("Ingrese 5 nombres");
+
 		while(nombres.size()<5) {
-			System.out.println("Inserte el nombre");
-			nombre = sc.nextLine();
+			System.out.println("Nombre " + (nombres.size() + 1) + ": ");
+			String nombre = sc.nextLine();
+			if(nombres.contains(nombre)) {
+				nombres.remove(nombres.size());
+			}
 			nombres.add(nombre);
 		}
-		
-	
-		
-		System.out.println(nombres);
-		
+
+			System.out.println("Nombres al reves");
+			Collections.reverse(nombres);
+			
+			for(String valor: nombres) {
+				System.out.println(valor);
+			}
 		sc.close();
 	}
 
