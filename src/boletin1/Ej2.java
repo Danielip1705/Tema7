@@ -20,7 +20,7 @@ public class Ej2 {
 			// añadimos a lista el num
 			listaNumeros.add(num);
 		}
-//Prueba
+//Pruebaaa
 		// Imprimimos la lista de numeros desordenada
 		System.out.println(listaNumeros);
 
